@@ -59,7 +59,7 @@ async def ask(req: Q):        # ① 接收前端数据
         
 
 if __name__ == "__main__":
-   uvicorn.run("deeptest:app",host="127.0.0.1",port=7000,reload=True)
+   uvicorn deeptest:app --host 0.0.0.0 --port $PORT
     
 
 
