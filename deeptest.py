@@ -59,6 +59,7 @@ async def ask(req: Q):        # ① 接收前端数据
         
 
 if __name__ == "__main__":
+   port = int(os.getenv("PORT", 7000))
    uvicorn.run("deeptest:app", host="0.0.0.0", port=port)
     
 
